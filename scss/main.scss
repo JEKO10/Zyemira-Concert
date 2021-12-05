@@ -1,3 +1,41 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #000;
+  background: #e0e0e0;
+}
+
+header {
+  @include flex(space-between, center);
+  min-height: 100vh;
+  width: 100%;
+  font-family: "Monda", sans-serif;
+
+  .landing {
+    background: url("../../image/bg.png") top left no-repeat;
+    min-height: 100vh;
+    flex: 2;
+
+    nav {
+      @include flex(space-between, center);
+      padding: 90px 80px;
+
+      ul {
+        @include flex(space-between, center);
+        list-style-type: none;
+      }
+    }
+  }
+
+  .singer {
+    height: 100vh;
+    flex: 1;
+    float: right;
+    background: url("../../image/singer.jpg") center/cover no-repeat;
+  }
 }
