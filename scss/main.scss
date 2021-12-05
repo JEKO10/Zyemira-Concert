@@ -12,8 +12,6 @@ body {
 
 header {
   @include flex(space-between, center);
-  min-height: 100vh;
-  width: 100%;
   font-family: "Monda", sans-serif;
 
   .landing {
@@ -37,18 +35,71 @@ header {
           padding: 0 25px;
 
           &.active {
-            color: #831adc;
-            font-weight: 800;
+            color: #9913e1;
+            font-weight: 900;
           }
+        }
+      }
+    }
+
+    .info {
+      @include flex(center, center);
+      flex-direction: column;
+
+      img:not(#arrow) {
+        height: 350px;
+        padding: 10px 0;
+        margin-right: -20rem;
+      }
+
+      #place {
+        background: #000;
+        color: #fff;
+        padding: 0 10px;
+        text-transform: uppercase;
+        transform: rotate(-5deg);
+      }
+
+      #party {
+        background: #9913e1;
+        color: #fff;
+        padding: 0 10px;
+        margin-right: -20rem;
+        text-transform: uppercase;
+        transform: rotate(-3deg);
+      }
+
+      p {
+        font-size: 1.3rem;
+        max-width: 600px;
+        text-align: center;
+        padding: 50px 0;
+        font-weight: 500;
+
+        span {
+          color: #9913e1;
+          font-weight: 900;
         }
       }
     }
   }
 
   .singer {
-    height: 100vh;
+    min-height: 100vh;
     flex: 1;
     float: right;
     background: url("../../image/singer.jpg") center/cover no-repeat;
+  }
+
+  // #arrow {
+  //   position: absolute;
+  //   left: 4rem;
+  //   bottom: 5rem;
+  // }
+
+  #arrow {
+    float: left;
+    margin-top: -10rem;
+    margin-left: 3rem;
   }
 }
