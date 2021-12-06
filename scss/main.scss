@@ -7,12 +7,12 @@
 }
 
 body {
-  background: #e0e0e0;
+  background-color: #e0e0e0;
+  font-family: "Monda", sans-serif;
 }
 
 header {
   @include flex(space-between, center);
-  font-family: "Monda", sans-serif;
 
   .landing {
     background: url("../../image/bg.png") top left no-repeat;
@@ -91,15 +91,28 @@ header {
     background: url("../../image/singer.jpg") center/cover no-repeat;
   }
 
-  // #arrow {
-  //   position: absolute;
-  //   left: 4rem;
-  //   bottom: 5rem;
-  // }
-
   #arrow {
     float: left;
     margin-top: -10rem;
     margin-left: 3rem;
+  }
+}
+
+.party {
+  background: #9913e1 url("../../image/bgShape.png") left bottom no-repeat;
+  @include flex(center, center);
+  padding: 50px 0;
+
+  h1 {
+    font-size: 5rem;
+    max-width: 400px;
+    letter-spacing: 5px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: "Staatliches", cursive;
+
+    span {
+      color: #fff;
+    }
   }
 }
