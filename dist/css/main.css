@@ -1,7 +1,31 @@
 .slider {
   background: url("../../image/bgSlider.png") no-repeat;
   background-size: 100%;
-  padding: 250px 0;
+  padding: 160px 180px 200px 180px;
+}
+
+.slider .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.slider .navigation h1 {
+  color: #9913e1;
+}
+
+.slider .navigation img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  padding: 0 50px;
 }
 
 * {
