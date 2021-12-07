@@ -1,7 +1,7 @@
 .slider {
   background: url("../../image/bgSlider.png") no-repeat;
   background-size: 100%;
-  padding: 160px 180px 200px 180px;
+  padding: 160px 180px 150px 180px;
 
   .navigation {
     @include flex(flex-end, center);
@@ -15,6 +15,45 @@
     img {
       transform: rotate(-90deg);
       padding: 0 50px;
+      height: 150px;
+    }
+  }
+
+  h3 {
+    background: #000;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transform: rotate(-5deg);
+    text-align: center;
+    margin: 5rem 5rem 3rem 0;
+  }
+
+  h2 {
+    background: $primaryColor;
+    color: #fff;
+    padding: 0 10px;
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+    text-align: center;
+    margin: 5rem 5rem 3rem 0;
+  }
+
+  .slide {
+    @include flex(center, center);
+
+    .place {
+      background: url("../../image/sliderImg.png") center no-repeat;
+    }
+
+    p {
+      font-size: 1.3rem;
+      max-width: 650px;
+
+      span {
+        color: $primaryColor;
+        font-weight: 900;
+      }
     }
   }
 }

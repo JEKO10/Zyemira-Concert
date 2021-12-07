@@ -1,7 +1,7 @@
 .slider {
   background: url("../../image/bgSlider.png") no-repeat;
   background-size: 100%;
-  padding: 160px 180px 200px 180px;
+  padding: 160px 180px 150px 180px;
 }
 
 .slider .navigation {
@@ -26,6 +26,55 @@
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   padding: 0 50px;
+  height: 150px;
+}
+
+.slider h3 {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  text-align: center;
+  margin: 5rem 5rem 3rem 0;
+}
+
+.slider h2 {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  text-align: center;
+  margin: 5rem 5rem 3rem 0;
+}
+
+.slider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slider .slide .place {
+  background: url("../../image/sliderImg.png") center no-repeat;
+}
+
+.slider .slide p {
+  font-size: 1.3rem;
+  max-width: 650px;
+}
+
+.slider .slide p span {
+  color: #9913e1;
+  font-weight: 900;
 }
 
 * {
@@ -91,6 +140,11 @@ header .landing nav ul li {
   font-size: 1.5rem;
   font-weight: 500;
   padding: 0 25px;
+  cursor: pointer;
+}
+
+header .landing nav ul li:hover {
+  color: #9913e1;
 }
 
 header .landing nav ul li.active {
