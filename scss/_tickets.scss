@@ -1,0 +1,14 @@
+.tickets {
+  min-height: 100vh;
+
+  > img {
+    width: 100%;
+  }
+
+  .info img {
+    margin-top: -0.45rem;
+  }
+
+  // background: url("../../image/bgTickets.jpg") top left no-repeat;
+  // background-size: 100%;
+}

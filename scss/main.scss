@@ -1,5 +1,6 @@
 @import "config";
 @import "slider";
+@import "tickets";
 
 * {
   margin: 0;
@@ -9,7 +10,7 @@
 
 body {
   background-color: $secondaryColor;
-  font-family: "Monda", sans-serif;
+  font-family: $primaryFont;
 }
 
 header {
@@ -116,7 +117,7 @@ header {
     letter-spacing: 5px;
     line-height: 70px;
     text-transform: uppercase;
-    font-family: "Staatliches", cursive;
+    font-family: $secondaryFont;
 
     span {
       color: #fff;
@@ -138,7 +139,7 @@ header {
 
   button {
     text-transform: uppercase;
-    font-family: "Monda", sans-serif;
+    font-family: $primaryFont;
     font-size: 1rem;
     font-weight: 900;
     background: none;

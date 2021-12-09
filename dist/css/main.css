@@ -93,6 +93,18 @@
   font-weight: 900;
 }
 
+.tickets {
+  min-height: 100vh;
+}
+
+.tickets > img {
+  width: 100%;
+}
+
+.tickets .info img {
+  margin-top: -0.45rem;
+}
+
 * {
   margin: 0;
   padding: 0;

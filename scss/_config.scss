@@ -1,5 +1,7 @@
 $primaryColor: #9913e1;
 $secondaryColor: #e0e0e0;
+$primaryFont: "Monda", sans-serif;
+$secondaryFont: "Staatliches", cursive;
 
 @mixin flex($justify, $align) {
   display: flex;
