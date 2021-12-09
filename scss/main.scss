@@ -147,10 +147,21 @@ header {
     border-radius: 20px;
     padding: 5px 40px;
     cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
 
     a {
       color: $secondaryColor;
       text-decoration: none;
+      padding: 10px 40px;
+      transition: all 1s ease;
+
+      &:hover {
+        color: $primaryColor;
+      }
     }
   }
 }

@@ -101,8 +101,89 @@
   width: 100%;
 }
 
+.tickets .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .tickets .info img {
   margin-top: -0.45rem;
+}
+
+.tickets .info h1 {
+  background: url("../../image/stroke.png") bottom no-repeat;
+  font-family: "Staatliches", cursive;
+  font-size: 7rem;
+  margin: 5rem 0 3rem 50px;
+}
+
+.tickets .info h1 span {
+  color: #9913e1;
+}
+
+.tickets .info .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+}
+
+.tickets .info .content > div {
+  padding: 0 20px;
+}
+
+.tickets .info .content button {
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #9913e1;
+  border-radius: 20px;
+  padding: 5px 0;
+  margin: 2rem 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.tickets .info .content button:hover {
+  background-color: #9913e1;
+}
+
+.tickets .info .content button a {
+  color: #9913e1;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.tickets .info .content button a:hover {
+  color: #e0e0e0;
+}
+
+.tickets .info .content p {
+  font-size: 1.3rem;
+  max-width: 450px;
+}
+
+.tickets .info .content p span {
+  color: #9913e1;
+  font-weight: 900;
 }
 
 * {
@@ -300,10 +381,23 @@ header #arrow {
   border-radius: 20px;
   padding: 5px 40px;
   cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.party button:hover {
+  background-color: #e0e0e0;
 }
 
 .party button a {
   color: #e0e0e0;
   text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.party button a:hover {
+  color: #9913e1;
 }
 /*# sourceMappingURL=main.css.map */
