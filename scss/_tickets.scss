@@ -1,36 +1,22 @@
 .tickets {
-  min-height: 100vh;
-
-  > img {
-    width: 100%;
-  }
+  @include flex(flex-start, flex-start);
 
   .info {
-    @include flex(space-between, flex-start);
-
-    img {
-      margin-top: -0.45rem;
-    }
-
     h1 {
       background: url("../../image/stroke.png") bottom no-repeat;
       font-family: $secondaryFont;
       font-size: 7rem;
-      margin: 5rem 0 3rem 50px;
-
+      margin: 5rem 0 3rem 60px;
       span {
         color: $primaryColor;
       }
     }
-
     .content {
       @include flex(space-between, center);
       padding-left: 30px;
-
       > div {
-        padding: 0 20px;
+        padding: 0 30px;
       }
-
       button {
         text-transform: uppercase;
         font-family: $primaryFont;
@@ -43,27 +29,22 @@
         margin: 2rem 0;
         cursor: pointer;
         transition: all 1s ease;
-
         &:hover {
           background-color: $primaryColor;
         }
-
         a {
           color: $primaryColor;
           text-decoration: none;
           padding: 10px 40px;
           transition: all 1s ease;
-
           &:hover {
             color: $secondaryColor;
           }
         }
       }
-
       p {
         font-size: 1.3rem;
-        max-width: 450px;
-
+        max-width: 420px;
         span {
           color: $primaryColor;
           font-weight: 900;
@@ -71,7 +52,4 @@
       }
     }
   }
-
-  // background: url("../../image/bgTickets.jpg") top left no-repeat;
-  // background-size: 100%;
 }
