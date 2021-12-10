@@ -3,6 +3,8 @@ $secondaryColor: #e0e0e0;
 $primaryFont: "Monda", sans-serif;
 $secondaryFont: "Staatliches", cursive;
 
+// SLIDER
+
 @mixin flex($justify, $align) {
   display: flex;
   justify-content: $justify;

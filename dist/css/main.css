@@ -198,6 +198,7 @@
 
 .moreInfo {
   background: url("../../image/bgSecondSlider.png") top left no-repeat;
+  background-size: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -209,16 +210,107 @@
           align-items: center;
 }
 
-.moreInfo img {
+.moreInfo img:not(#arrow) {
   max-width: 50%;
 }
 
-.moreInfo div {
-  background: url("../../image/sliderImg.png") center no-repeat;
+.moreInfo > div {
+  background: url("../../image/sliderImg.png") top no-repeat;
+  background-size: 50%;
   padding: 0 20px 0 120px;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+}
+
+.moreInfo > div h4 {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+  text-align: center;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.moreInfo > div h3 {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  text-align: center;
+  margin: 1.5rem auto 3rem auto;
+  max-width: 450px;
+}
+
+.moreInfo > div p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.moreInfo > div p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+
+.moreInfo > div button {
+  display: block;
+  margin: 3rem auto 0 auto;
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #9913e1;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.moreInfo > div button:hover {
+  background-color: #9913e1;
+}
+
+.moreInfo > div button a {
+  color: #9913e1;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.moreInfo > div button a:hover {
+  color: #e0e0e0;
+}
+
+.moreInfo > div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5rem;
+}
+
+.moreInfo > div div img:first-child {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.moreInfo > div div img {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  cursor: pointer;
 }
 
 * {
