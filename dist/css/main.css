@@ -196,6 +196,31 @@
   max-height: 14vw;
 }
 
+.moreInfo {
+  background: url("../../image/bgSecondSlider.png") top left no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moreInfo img {
+  max-width: 50%;
+}
+
+.moreInfo div {
+  background: url("../../image/sliderImg.png") center no-repeat;
+  padding: 0 20px 0 120px;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 * {
   margin: 0;
   padding: 0;
