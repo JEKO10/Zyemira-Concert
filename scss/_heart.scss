@@ -1,0 +1,4 @@
+.heart {
+  background: $primaryColor url("../../image/bgHeart.png") right no-repeat;
+  @include flex(center, center);
+}
