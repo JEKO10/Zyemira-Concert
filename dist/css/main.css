@@ -313,6 +313,12 @@
   cursor: pointer;
 }
 
+.noTomorrow {
+  background: url("../../image/bgNoTomorrow.png") no-repeat;
+  background-size: 100%;
+  min-height: 700px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -518,5 +524,9 @@ header #arrow {
 
 .party button a:hover {
   color: #9913e1;
+}
+
+.partyImg img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

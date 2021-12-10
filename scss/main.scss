@@ -2,6 +2,7 @@
 @import "slider";
 @import "tickets";
 @import "moreInfo";
+@import "noTomorrow";
 
 // SLIDER
 
@@ -160,5 +161,11 @@ header {
         color: $primaryColor;
       }
     }
+  }
+}
+
+.partyImg {
+  img {
+    width: 100%;
   }
 }
