@@ -1,4 +1,68 @@
 .heart {
   background: $primaryColor url("../../image/bgHeart.png") right no-repeat;
-  @include flex(center, center);
+  @include flex(space-between, center);
+
+  img {
+    max-width: 50%;
+  }
+
+  div {
+    // text-align: center;
+    padding: 0 80px 0 50px;
+
+    p {
+      font-size: 1.3rem;
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 25px;
+
+      span {
+        color: #fff;
+        font-weight: 900;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 5rem;
+    max-width: 400px;
+    letter-spacing: 5px;
+    line-height: 80px;
+    text-transform: uppercase;
+    font-family: $secondaryFont;
+    padding-bottom: 40px;
+
+    span {
+      color: #fff;
+    }
+  }
+
+  button {
+    margin-top: 3rem;
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 1rem;
+    font-weight: 900;
+    background: none;
+    border: 3px solid $secondaryColor;
+    border-radius: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+    transition: all 1s ease;
+
+    &:hover {
+      background-color: $secondaryColor;
+    }
+
+    a {
+      color: $secondaryColor;
+      text-decoration: none;
+      padding: 10px 40px;
+      transition: all 1s ease;
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
 }

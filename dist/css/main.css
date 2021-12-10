@@ -380,12 +380,77 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.heart img {
+  max-width: 50%;
+}
+
+.heart div {
+  padding: 0 80px 0 50px;
+}
+
+.heart div p {
+  font-size: 1.3rem;
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.heart div p span {
+  color: #fff;
+  font-weight: 900;
+}
+
+.heart h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding-bottom: 40px;
+}
+
+.heart h1 span {
+  color: #fff;
+}
+
+.heart button {
+  margin-top: 3rem;
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.heart button:hover {
+  background-color: #e0e0e0;
+}
+
+.heart button a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.heart button a:hover {
+  color: #9913e1;
 }
 
 * {
