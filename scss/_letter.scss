@@ -1,0 +1,5 @@
+.letter {
+  @include flex(space-between, center);
+  background: $primaryColor url("../../image/bgLetter.png") left bottom
+    no-repeat;
+}

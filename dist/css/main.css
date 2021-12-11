@@ -486,8 +486,9 @@
   margin: 0;
   left: 0;
   margin-top: 10rem;
-  -webkit-animation: 15s slider infinite;
-          animation: 15s slider infinite;
+  -webkit-animation: 15s slider infinite alternate;
+          animation: 15s slider infinite alternate;
+  z-index: -1;
 }
 
 .performers .sliderPerform div {
@@ -574,6 +575,19 @@
   100% {
     left: -200%;
   }
+}
+
+.letter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #9913e1 url("../../image/bgLetter.png") left bottom no-repeat;
 }
 
 * {
