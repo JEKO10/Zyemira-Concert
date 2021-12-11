@@ -1,0 +1,10 @@
+.performers {
+  @include flex(center, center);
+  background: url("../../image/bgPerformers.png") no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+
+  div {
+    background: url("../../image/stroke.png") bottom no-repeat;
+  }
+}

@@ -473,6 +473,25 @@
   color: #9913e1;
 }
 
+.performers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("../../image/bgPerformers.png") no-repeat;
+  background-size: 100%;
+  min-height: 100vh;
+}
+
+.performers div {
+  background: url("../../image/stroke.png") bottom no-repeat;
+}
+
 * {
   margin: 0;
   padding: 0;
