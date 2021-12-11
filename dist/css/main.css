@@ -396,6 +396,40 @@
   padding: 0 80px 0 50px;
 }
 
+.heart div img:first-child {
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+  margin-bottom: 2rem;
+}
+
+.heart div img:nth-child(2) {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  margin-right: 5rem;
+  float: right;
+}
+
+.heart div img:last-child {
+  -webkit-transform: rotate(150deg);
+          transform: rotate(150deg);
+  margin: 2rem 5rem 0 0;
+  float: right;
+}
+
+.heart div h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding-bottom: 40px;
+}
+
+.heart div h1 span {
+  color: #fff;
+}
+
 .heart div p {
   font-size: 1.3rem;
   max-width: 500px;
@@ -408,21 +442,7 @@
   font-weight: 900;
 }
 
-.heart h1 {
-  font-size: 5rem;
-  max-width: 400px;
-  letter-spacing: 5px;
-  line-height: 80px;
-  text-transform: uppercase;
-  font-family: "Staatliches", cursive;
-  padding-bottom: 40px;
-}
-
-.heart h1 span {
-  color: #fff;
-}
-
-.heart button {
+.heart div button {
   margin-top: 3rem;
   text-transform: uppercase;
   font-family: "Monda", sans-serif;
@@ -437,11 +457,11 @@
   transition: all 1s ease;
 }
 
-.heart button:hover {
+.heart div button:hover {
   background-color: #e0e0e0;
 }
 
-.heart button a {
+.heart div button a {
   color: #e0e0e0;
   text-decoration: none;
   padding: 10px 40px;
@@ -449,7 +469,7 @@
   transition: all 1s ease;
 }
 
-.heart button a:hover {
+.heart div button a:hover {
   color: #9913e1;
 }
 
