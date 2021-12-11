@@ -474,22 +474,106 @@
 }
 
 .performers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: url("../../image/bgPerformers.png") no-repeat;
   background-size: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 
-.performers div {
+.performers .sliderPerform {
+  position: relative;
+  width: 300%;
+  margin: 0;
+  left: 0;
+  margin-top: 10rem;
+  -webkit-animation: 15s slider infinite;
+          animation: 15s slider infinite;
+}
+
+.performers .sliderPerform div {
+  width: 33.33%;
+  float: left;
   background: url("../../image/stroke.png") bottom no-repeat;
+  text-align: center;
+}
+
+.performers .sliderPerform div h1 {
+  font-size: 5rem;
+  letter-spacing: 5px;
+  line-height: 80px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding: 40px 0;
+}
+
+.performers .sliderPerform div h1 span {
+  color: #9913e1;
+}
+
+.performers .sliderPerform div p {
+  font-size: 1.3rem;
+  max-width: 650px;
+  margin: 0 auto;
+  line-height: 25px;
+  margin-bottom: 5rem;
+}
+
+.performers .sliderPerform div p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+
+.performers > img {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.performers > img:last-child {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  33.33% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  67% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  30% {
+    left: 0;
+  }
+  33.33% {
+    left: -100%;
+  }
+  60% {
+    left: -100%;
+  }
+  67% {
+    left: -200%;
+  }
+  100% {
+    left: -200%;
+  }
 }
 
 * {
