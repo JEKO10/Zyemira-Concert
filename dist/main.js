@@ -1,9 +1,11 @@
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 const slides = document.querySelectorAll(".slide");
-let number = document.querySelector(".navigation h1 span");
+const number = document.querySelector(".navigation h1 span");
+const submit = document.querySelector("#submit");
+const inputs = document.querySelectorAll("input, textarea");
 
-slides.forEach(function (slide, index) {
+slides.forEach((slide, index) => {
   slide.style.left = `${index * 100}%`;
 });
 
@@ -21,8 +23,9 @@ prev.addEventListener("click", function () {
   num--;
   slide();
 });
+prev.style.display = "none";
 
-function slide() {
+const slide = () => {
   if (counter > 0) {
     prev.style.display = "inline";
   } else {
@@ -40,6 +43,10 @@ function slide() {
   });
 
   number.innerHTML = num;
-}
+};
 
-prev.style.display = "none";
+submit.addEventListener("click", () => {
+  inputs.forEach((input) => {
+    input.value = "";
+  });
+});

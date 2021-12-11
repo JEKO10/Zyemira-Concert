@@ -483,9 +483,8 @@
 .performers .sliderPerform {
   position: relative;
   width: 300%;
-  margin: 0;
+  margin: 10rem 0;
   left: 0;
-  margin-top: 10rem;
   -webkit-animation: 15s slider infinite alternate;
           animation: 15s slider infinite alternate;
   z-index: -1;
@@ -496,6 +495,7 @@
   float: left;
   background: url("../../image/stroke.png") bottom no-repeat;
   text-align: center;
+  margin-bottom: 5rem;
 }
 
 .performers .sliderPerform div h1 {
@@ -588,6 +588,97 @@
       -ms-flex-align: center;
           align-items: center;
   background: #9913e1 url("../../image/bgLetter.png") left bottom no-repeat;
+}
+
+.letter div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.letter div h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  padding-bottom: 10px;
+}
+
+.letter div h1 span {
+  color: #fff;
+}
+
+.letter div input,
+.letter div textarea,
+.letter div button {
+  width: 40%;
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  background: none;
+  color: #fff;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 30px;
+  resize: none;
+  outline: none;
+}
+
+.letter div input::-webkit-input-placeholder,
+.letter div textarea::-webkit-input-placeholder,
+.letter div button::-webkit-input-placeholder {
+  color: #e0e0e0;
+}
+
+.letter div input:-ms-input-placeholder,
+.letter div textarea:-ms-input-placeholder,
+.letter div button:-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+.letter div input::-ms-input-placeholder,
+.letter div textarea::-ms-input-placeholder,
+.letter div button::-ms-input-placeholder {
+  color: #e0e0e0;
+}
+
+.letter div input::placeholder,
+.letter div textarea::placeholder,
+.letter div button::placeholder {
+  color: #e0e0e0;
+}
+
+.letter div button {
+  background: #e0e0e0;
+  color: #9913e1;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.letter div button:hover {
+  background: #9913e1;
+  color: #e0e0e0;
+}
+
+.letter img {
+  max-width: 50%;
 }
 
 * {
