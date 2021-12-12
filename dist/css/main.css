@@ -682,6 +682,14 @@
 }
 
 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: url("../../image/bgFooter.png") bottom no-repeat;
   background-size: 100%;
   min-height: 100vh;
