@@ -685,14 +685,55 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   background: url("../../image/bgFooter.png") bottom no-repeat;
   background-size: 100%;
-  min-height: 100vh;
+  min-height: 700px;
+  padding-top: 80px;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  padding: 5px 0;
+  font-size: 1.5rem;
+}
+
+footer button {
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #9913e1;
+  border-radius: 20px;
+  padding: 5px 0;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+footer button:hover {
+  background-color: #9913e1;
+}
+
+footer button a {
+  color: #9913e1;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+footer button a:hover {
+  color: #e0e0e0;
 }
 
 * {
