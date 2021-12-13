@@ -3,7 +3,7 @@
   background-size: 15%;
   @include flex(space-between, center);
 
-  img:not(#arrow) {
+  img {
     max-width: 50%;
   }
 

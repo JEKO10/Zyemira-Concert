@@ -10,3 +10,9 @@ $secondaryFont: "Staatliches", cursive;
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin mediaLarge {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}

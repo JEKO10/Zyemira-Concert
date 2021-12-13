@@ -1,3 +1,198 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 100vh;
+}
+
+header .landing {
+  background: url("../../image/bg.png") top left no-repeat;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  min-height: 100vh;
+}
+
+header .landing nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 90px 20px 0 80px;
+}
+
+header .landing nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+}
+
+header .landing nav ul li {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+header .landing nav ul li:hover {
+  color: #9913e1;
+}
+
+header .landing nav ul li.active {
+  color: #9913e1;
+  font-weight: 900;
+}
+
+header .landing .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .landing .info img {
+  height: 350px;
+  padding: 10px 0;
+  margin-right: -20rem;
+}
+
+header .landing .info #place {
+  background: #000;
+  color: #fff;
+  padding: 0 10px;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-5deg);
+          transform: rotate(-5deg);
+}
+
+header .landing .info #party {
+  background: #9913e1;
+  color: #fff;
+  padding: 0 10px;
+  margin-right: -20rem;
+  text-transform: uppercase;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+}
+
+header .landing .info p {
+  font-size: 1.3rem;
+  max-width: 600px;
+  text-align: center;
+  padding: 50px 0;
+  font-weight: 500;
+}
+
+header .landing .info p span {
+  color: #9913e1;
+  font-weight: 900;
+}
+
+header #arrow {
+  float: left;
+  margin-top: -10rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.party {
+  background: #9913e1 url("../../image/bgShape.png") left bottom no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.party h1 {
+  font-size: 5rem;
+  max-width: 400px;
+  letter-spacing: 5px;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+}
+
+.party h1 span {
+  color: #fff;
+}
+
+.party p {
+  max-width: 420px;
+  line-height: 23px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 0;
+}
+
+.party p span {
+  color: #fff;
+  font-weight: 900;
+}
+
+.party button {
+  text-transform: uppercase;
+  font-family: "Monda", sans-serif;
+  font-size: 1rem;
+  font-weight: 900;
+  background: none;
+  border: 3px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 5px 40px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.party button:hover {
+  background-color: #e0e0e0;
+}
+
+.party button a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 40px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.party button a:hover {
+  color: #9913e1;
+}
+
 .slider {
   background: url("../../image/bgSlider.png") no-repeat;
   background-size: 100%;
@@ -210,7 +405,7 @@
           align-items: center;
 }
 
-.moreInfo img:not(#arrow) {
+.moreInfo img {
   max-width: 50%;
 }
 
@@ -736,6 +931,12 @@ footer button a:hover {
   color: #e0e0e0;
 }
 
+@media (max-width: 1200px) {
+  header .landing .info img {
+    height: 250px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -746,201 +947,6 @@ footer button a:hover {
 body {
   background-color: #e0e0e0;
   font-family: "Monda", sans-serif;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  min-height: 100vh;
-}
-
-header .landing {
-  background: url("../../image/bg.png") top left no-repeat;
-  -webkit-box-flex: 2;
-      -ms-flex: 2;
-          flex: 2;
-  min-height: 100vh;
-}
-
-header .landing nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 90px 20px 0 80px;
-}
-
-header .landing nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style-type: none;
-}
-
-header .landing nav ul li {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  font-weight: 500;
-  padding: 0 20px;
-  cursor: pointer;
-}
-
-header .landing nav ul li:hover {
-  color: #9913e1;
-}
-
-header .landing nav ul li.active {
-  color: #9913e1;
-  font-weight: 900;
-}
-
-header .landing .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-header .landing .info img {
-  height: 350px;
-  padding: 10px 0;
-  margin-right: -20rem;
-}
-
-header .landing .info #place {
-  background: #000;
-  color: #fff;
-  padding: 0 10px;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-5deg);
-          transform: rotate(-5deg);
-}
-
-header .landing .info #party {
-  background: #9913e1;
-  color: #fff;
-  padding: 0 10px;
-  margin-right: -20rem;
-  text-transform: uppercase;
-  -webkit-transform: rotate(-3deg);
-          transform: rotate(-3deg);
-}
-
-header .landing .info p {
-  font-size: 1.3rem;
-  max-width: 600px;
-  text-align: center;
-  padding: 50px 0;
-  font-weight: 500;
-}
-
-header .landing .info p span {
-  color: #9913e1;
-  font-weight: 900;
-}
-
-header #arrow {
-  float: left;
-  margin-top: -10rem;
-  margin-left: 2rem;
-  cursor: pointer;
-}
-
-.party {
-  background: #9913e1 url("../../image/bgShape.png") left bottom no-repeat;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 50px 0;
-}
-
-.party h1 {
-  font-size: 5rem;
-  max-width: 400px;
-  letter-spacing: 5px;
-  line-height: 70px;
-  text-transform: uppercase;
-  font-family: "Staatliches", cursive;
-}
-
-.party h1 span {
-  color: #fff;
-}
-
-.party p {
-  max-width: 420px;
-  line-height: 23px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  padding: 20px 0;
-}
-
-.party p span {
-  color: #fff;
-  font-weight: 900;
-}
-
-.party button {
-  text-transform: uppercase;
-  font-family: "Monda", sans-serif;
-  font-size: 1rem;
-  font-weight: 900;
-  background: none;
-  border: 3px solid #e0e0e0;
-  border-radius: 20px;
-  padding: 5px 40px;
-  cursor: pointer;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.party button:hover {
-  background-color: #e0e0e0;
-}
-
-.party button a {
-  color: #e0e0e0;
-  text-decoration: none;
-  padding: 10px 40px;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.party button a:hover {
-  color: #9913e1;
 }
 
 .partyImg img {
