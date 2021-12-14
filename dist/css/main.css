@@ -960,6 +960,19 @@ footer button a:hover {
   #arrow {
     display: none;
   }
+  .party {
+    background-size: 30% 35%;
+  }
+  .slider h2,
+  .slider h3 {
+    font-size: 1rem;
+  }
+  .slider .slide {
+    padding-left: 30px;
+  }
+  .slider .slide p {
+    max-width: 400px;
+  }
 }
 
 * {

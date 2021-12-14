@@ -41,4 +41,24 @@
   #arrow {
     display: none;
   }
+
+  .party {
+    background-size: 30% 35%;
+  }
+
+  .slider {
+    h2,
+    h3 {
+      font-size: 1rem;
+    }
+
+    .slide {
+      padding-left: 30px;
+
+      p {
+        // font-size: 1.3rem;
+        max-width: 400px;
+      }
+    }
+  }
 }
