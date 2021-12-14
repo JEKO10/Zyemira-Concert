@@ -1,11 +1,44 @@
 @include mediaLarge {
   header {
     .landing {
+      nav {
+        padding: 60px 20px 0 80px;
+
+        img {
+          height: 70px;
+        }
+
+        ul {
+          li {
+            font-size: 1.2rem;
+            padding: 0 10px;
+          }
+        }
+      }
+
       .info {
         img {
           height: 250px;
+          margin-right: -5rem;
+        }
+
+        #place {
+          font-size: 1rem;
+        }
+
+        #party {
+          margin-right: -5rem;
+          transform: rotate(-5deg);
+        }
+
+        p {
+          max-width: 450px;
         }
       }
     }
+  }
+
+  #arrow {
+    display: none;
   }
 }
