@@ -1,6 +1,10 @@
 .tickets {
   @include flex(flex-start, flex-start);
 
+  #bannerAfter {
+    display: none;
+  }
+
   .info {
     #banner {
       width: 100%;

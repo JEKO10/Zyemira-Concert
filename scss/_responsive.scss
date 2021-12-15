@@ -43,7 +43,7 @@
   }
 
   .party {
-    background-size: 30% 35%;
+    background-size: 25% 35%;
   }
 
   .slider {
@@ -56,8 +56,50 @@
       padding-left: 30px;
 
       p {
-        // font-size: 1.3rem;
         max-width: 400px;
+      }
+    }
+  }
+
+  .tickets {
+    flex-direction: column;
+
+    .info {
+      h1 {
+        margin: 1rem 0 1rem 60px;
+      }
+
+      .images {
+        @include flex(space-between, center);
+        margin-top: 3rem;
+        margin-left: 0;
+
+        * {
+          max-height: 18vw;
+          padding: 0;
+        }
+      }
+    }
+
+    > img,
+    #banner {
+      display: none;
+    }
+
+    #bannerAfter {
+      display: block;
+      max-width: 100%;
+    }
+  }
+
+  .moreInfo {
+    > div {
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        text-align: center;
       }
     }
   }

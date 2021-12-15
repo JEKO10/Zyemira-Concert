@@ -298,6 +298,10 @@ header #arrow {
           align-items: flex-start;
 }
 
+.tickets #bannerAfter {
+  display: none;
+}
+
 .tickets .info #banner {
   width: 100%;
   height: 250px;
@@ -961,7 +965,7 @@ footer button a:hover {
     display: none;
   }
   .party {
-    background-size: 30% 35%;
+    background-size: 25% 35%;
   }
   .slider h2,
   .slider h3 {
@@ -972,6 +976,46 @@ footer button a:hover {
   }
   .slider .slide p {
     max-width: 400px;
+  }
+  .tickets {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .tickets .info h1 {
+    margin: 1rem 0 1rem 60px;
+  }
+  .tickets .info .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+  .tickets .info .images * {
+    max-height: 18vw;
+    padding: 0;
+  }
+  .tickets > img,
+  .tickets #banner {
+    display: none;
+  }
+  .tickets #bannerAfter {
+    display: block;
+    max-width: 100%;
+  }
+  .moreInfo > div h3 {
+    font-size: 1rem;
+  }
+  .moreInfo > div p {
+    text-align: center;
   }
 }
 
