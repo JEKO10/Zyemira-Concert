@@ -135,4 +135,18 @@
       }
     }
   }
+
+  .letter {
+    div {
+      input,
+      textarea,
+      button {
+        width: 50%;
+      }
+    }
+  }
+
+  footer img {
+    height: 85px;
+  }
 }

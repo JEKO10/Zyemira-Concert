@@ -1039,6 +1039,14 @@ footer button a:hover {
     font-size: 1.2rem;
     text-align: center;
   }
+  .letter div input,
+  .letter div textarea,
+  .letter div button {
+    width: 50%;
+  }
+  footer img {
+    height: 85px;
+  }
 }
 
 * {
