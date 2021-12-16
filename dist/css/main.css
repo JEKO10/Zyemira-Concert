@@ -1072,6 +1072,44 @@ footer button a:hover {
     max-width: 600px;
     line-height: 35px;
   }
+  .party {
+    padding: 50px 30px;
+  }
+  .party h1 {
+    font-size: 3.5rem;
+    line-height: 50px;
+    max-width: 300px;
+  }
+  .party p {
+    text-align: center;
+    max-width: 500px;
+    line-height: 25px;
+  }
+  .party button {
+    display: none;
+  }
+  .slider {
+    min-height: 550px;
+  }
+  .slider .navigation {
+    max-width: 600px;
+    margin: 5rem auto 0 auto;
+  }
+  .slider .slide .place {
+    background-size: 60%;
+  }
+  .slider .slide div:not(.place) {
+    display: none;
+  }
+  .slider .slide p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+  .slider h3,
+  .slider h2 {
+    font-size: 1.3rem;
+  }
 }
 
 * {

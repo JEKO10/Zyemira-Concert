@@ -185,4 +185,55 @@
       }
     }
   }
+
+  .party {
+    padding: 50px 30px;
+
+    h1 {
+      font-size: 3.5rem;
+      line-height: 50px;
+      max-width: 300px;
+    }
+
+    p {
+      text-align: center;
+      max-width: 500px;
+      line-height: 25px;
+      // padding: 20px 0;
+    }
+
+    button {
+      display: none;
+    }
+  }
+
+  .slider {
+    min-height: 550px;
+
+    .navigation {
+      max-width: 600px;
+      margin: 5rem auto 0 auto;
+    }
+
+    .slide {
+      .place {
+        background-size: 60%;
+      }
+
+      div:not(.place) {
+        display: none;
+      }
+
+      p {
+        font-size: 1.5rem;
+        max-width: 600px;
+        text-align: center;
+      }
+    }
+
+    h3,
+    h2 {
+      font-size: 1.3rem;
+    }
+  }
 }
