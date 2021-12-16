@@ -150,3 +150,39 @@
     height: 85px;
   }
 }
+
+@include mediaMediumLarge {
+  header {
+    > img {
+      display: none;
+    }
+
+    .landing {
+      nav {
+        padding: 60px 20px 0 60px;
+
+        ul li {
+          font-size: 1.3rem;
+          padding: 0 9px;
+        }
+      }
+
+      .info {
+        img {
+          height: 330px;
+        }
+
+        #place,
+        #party {
+          font-size: 1.5rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          max-width: 600px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}
