@@ -231,9 +231,54 @@
       }
     }
 
-    h3,
-    h2 {
+    h2,
+    h3 {
       font-size: 1.3rem;
+    }
+  }
+
+  .moreInfo {
+    padding: 90px 0;
+
+    img {
+      display: none;
+    }
+
+    div {
+      padding: 0 20px 0 20px;
+
+      h3,
+      h4 {
+        font-size: 1.3rem;
+        max-width: 550px;
+      }
+
+      p {
+        font-size: 1.5rem;
+        max-width: 600px;
+      }
+
+      button {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .noTomorrow {
+    padding: 60px 30px;
+    flex-direction: column;
+
+    h1 {
+      font-size: 4.5rem;
+      line-height: 60px;
+
+      max-width: 515px;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    p {
+      font-size: 1.5rem;
     }
   }
 }
