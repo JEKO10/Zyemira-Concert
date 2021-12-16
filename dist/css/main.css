@@ -1017,6 +1017,28 @@ footer button a:hover {
   .moreInfo > div p {
     text-align: center;
   }
+  .noTomorrow {
+    padding: 100px 30px;
+  }
+  .noTomorrow h1 {
+    font-size: 4rem;
+    line-height: 55px;
+  }
+  .noTomorrow h2 {
+    font-size: 1.3rem;
+  }
+  .noTomorrow p {
+    max-width: 750px;
+  }
+  .heart div h1 {
+    font-size: 4.5rem;
+    line-height: 70px;
+    padding-bottom: 20px;
+  }
+  .heart div p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 * {
