@@ -1263,6 +1263,15 @@ footer button a:hover {
     font-size: 4rem;
     text-align: center;
   }
+  .performers {
+    background-size: 150%;
+  }
+  .performers .sliderPerform div {
+    padding: 0 30px;
+  }
+  footer img {
+    display: none;
+  }
 }
 
 * {

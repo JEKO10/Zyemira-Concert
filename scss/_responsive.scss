@@ -427,4 +427,15 @@
     font-size: 4rem;
     text-align: center;
   }
+
+  .performers {
+    background-size: 150%;
+    .sliderPerform div {
+      padding: 0 30px;
+    }
+  }
+
+  footer img {
+    display: none;
+  }
 }
