@@ -281,4 +281,46 @@
       font-size: 1.5rem;
     }
   }
+
+  .heart {
+    padding: 30px 0;
+    @include flex(center, center);
+
+    > img {
+      display: none;
+    }
+
+    div {
+      padding: 0;
+
+      img:first-child {
+        transform: rotate(-20deg);
+      }
+
+      h1 {
+        max-width: 100%;
+      }
+
+      p {
+        max-width: 620px;
+      }
+    }
+  }
+
+  .letter {
+    padding: 20px 0;
+
+    img {
+      display: none;
+    }
+  }
+
+  footer {
+    min-height: 600px;
+    padding-top: 50px;
+
+    ul li {
+      font-size: 1.3rem;
+    }
+  }
 }

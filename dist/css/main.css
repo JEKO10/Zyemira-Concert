@@ -1148,6 +1148,47 @@ footer button a:hover {
   .noTomorrow p {
     font-size: 1.5rem;
   }
+  .heart {
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .heart > img {
+    display: none;
+  }
+  .heart div {
+    padding: 0;
+  }
+  .heart div img:first-child {
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  .heart div h1 {
+    max-width: 100%;
+  }
+  .heart div p {
+    max-width: 620px;
+  }
+  .letter {
+    padding: 20px 0;
+  }
+  .letter img {
+    display: none;
+  }
+  footer {
+    min-height: 600px;
+    padding-top: 50px;
+  }
+  footer ul li {
+    font-size: 1.3rem;
+  }
 }
 
 * {
