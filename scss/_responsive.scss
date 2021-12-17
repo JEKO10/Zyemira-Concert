@@ -271,7 +271,6 @@
     h1 {
       font-size: 4.5rem;
       line-height: 60px;
-
       max-width: 515px;
       text-align: center;
       margin-bottom: 5rem;
@@ -283,7 +282,7 @@
   }
 
   .heart {
-    padding: 30px 0;
+    padding: 30px;
     @include flex(center, center);
 
     > img {
@@ -381,5 +380,51 @@
     h3 {
       font-size: 1.1rem;
     }
+  }
+
+  .tickets {
+    .info {
+      h1 {
+        font-size: 5rem;
+        margin: 1rem 0 1rem 30px;
+        text-align: center;
+      }
+
+      .content {
+        padding: 0;
+
+        div {
+          &:first-child {
+            display: none;
+          }
+        }
+
+        p {
+          text-align: center;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .noTomorrow {
+    padding: 40px 30px;
+
+    h1 {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      line-height: 35px;
+    }
+  }
+
+  .heart div h1 {
+    font-size: 4rem;
+    text-align: center;
   }
 }
