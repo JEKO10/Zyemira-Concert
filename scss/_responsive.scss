@@ -348,4 +348,38 @@
       }
     }
   }
+
+  .party {
+    background-size: 35%;
+
+    h1 {
+      font-size: 4rem;
+      line-height: 60px;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    p {
+      display: none;
+    }
+  }
+
+  .slider {
+    .navigation {
+      max-width: 400px;
+    }
+
+    .slide {
+      padding-left: 0;
+
+      p {
+        max-width: 550px;
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 1.1rem;
+    }
+  }
 }
