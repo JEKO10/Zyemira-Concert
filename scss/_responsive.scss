@@ -324,3 +324,28 @@
     }
   }
 }
+
+@include mediaMedium {
+  header {
+    .landing {
+      background: url("../../image/bgHeader.png") top left no-repeat;
+
+      .info {
+        img {
+          height: 300px;
+        }
+
+        #place,
+        #party {
+          font-size: 1.3rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          max-width: 500px;
+          line-height: 35px;
+        }
+      }
+    }
+  }
+}

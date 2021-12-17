@@ -1191,6 +1191,24 @@ footer button a:hover {
   }
 }
 
+@media screen and (max-width: 768px) {
+  header .landing {
+    background: url("../../image/bgHeader.png") top left no-repeat;
+  }
+  header .landing .info img {
+    height: 300px;
+  }
+  header .landing .info #place,
+  header .landing .info #party {
+    font-size: 1.3rem;
+  }
+  header .landing .info p {
+    font-size: 1.4rem;
+    max-width: 500px;
+    line-height: 35px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
