@@ -545,4 +545,23 @@
   .performers {
     background-size: 200%;
   }
+
+  .letter {
+    background-size: 20%;
+
+    div {
+      input,
+      textarea,
+      button {
+        width: 60%;
+      }
+    }
+  }
+
+  footer {
+    min-height: 450px;
+    button {
+      display: none;
+    }
+  }
 }

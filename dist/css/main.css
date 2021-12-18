@@ -1345,6 +1345,20 @@ footer button a:hover {
   .performers {
     background-size: 200%;
   }
+  .letter {
+    background-size: 20%;
+  }
+  .letter div input,
+  .letter div textarea,
+  .letter div button {
+    width: 60%;
+  }
+  footer {
+    min-height: 450px;
+  }
+  footer button {
+    display: none;
+  }
 }
 
 * {
