@@ -475,4 +475,41 @@
     padding: 30px;
     background-size: 25%;
   }
+
+  .slider {
+    .navigation {
+      max-width: 370px;
+
+      #next,
+      #prev {
+        height: 80px;
+      }
+    }
+
+    .slide {
+      p {
+        font-size: 1.2rem;
+        max-width: 450px;
+      }
+    }
+
+    h3,
+    h2 {
+      max-width: 450px;
+      margin: 3rem auto;
+    }
+  }
+
+  .tickets {
+    .info {
+      h1 {
+        font-size: 4.5rem;
+        margin: 1rem 0;
+      }
+
+      .images {
+        margin-top: 1rem;
+      }
+    }
+  }
 }
