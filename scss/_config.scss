@@ -34,3 +34,9 @@ $secondaryFont: "Staatliches", cursive;
     @content;
   }
 }
+
+@mixin mediaSmall {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

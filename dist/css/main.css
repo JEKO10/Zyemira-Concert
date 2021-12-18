@@ -1361,6 +1361,60 @@ footer button a:hover {
   }
 }
 
+@media screen and (max-width: 480px) {
+  header {
+    min-height: 30vh;
+  }
+  header .landing {
+    min-height: 30vh;
+    background-size: 30%;
+  }
+  header .landing nav {
+    padding: 50px 0 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .landing nav ul li {
+    font-size: 1rem;
+    padding: 0 5px;
+  }
+  header .landing nav img {
+    display: none;
+  }
+  header .landing .info img {
+    height: 180px;
+    margin-right: -1rem;
+  }
+  header .landing .info #place {
+    font-size: 0.7rem;
+  }
+  header .landing .info #party {
+    margin-right: -1rem;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+  header .landing .info p {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 25px;
+    padding: 40px 10px;
+  }
+  .party {
+    background-size: 30%;
+  }
+  .party h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;

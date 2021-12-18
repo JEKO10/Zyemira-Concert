@@ -565,3 +565,60 @@
     }
   }
 }
+
+@include mediaSmall {
+  header {
+    min-height: 30vh;
+
+    .landing {
+      min-height: 30vh;
+      background-size: 30%;
+      nav {
+        padding: 50px 0 10px 0;
+        @include flex(center, center);
+
+        ul li {
+          font-size: 1rem;
+          padding: 0 5px;
+        }
+
+        img {
+          display: none;
+        }
+      }
+
+      .info {
+        img {
+          height: 180px;
+          margin-right: -1rem;
+        }
+
+        #place {
+          font-size: 0.7rem;
+        }
+
+        #party {
+          margin-right: -1rem;
+          font-size: 0.8rem;
+          margin: 0.5rem 0;
+        }
+
+        p {
+          font-size: 1rem;
+          max-width: 400px;
+          line-height: 25px;
+          padding: 40px 10px;
+        }
+      }
+    }
+  }
+
+  .party {
+    background-size: 30%;
+
+    h1 {
+      font-size: 3rem;
+      line-height: 45px;
+    }
+  }
+}
