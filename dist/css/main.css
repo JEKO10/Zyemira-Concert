@@ -1321,6 +1321,30 @@ footer button a:hover {
   .tickets .info .images {
     margin-top: 1rem;
   }
+  .moreInfo div {
+    background-size: 80%;
+  }
+  .moreInfo div h4 {
+    font-size: 1rem;
+  }
+  .moreInfo div p {
+    font-size: 1.2rem;
+    max-width: 450px;
+  }
+  .noTomorrow h2 {
+    font-size: 1rem;
+  }
+  .noTomorrow p {
+    font-size: 1.2rem;
+    max-width: 450px;
+    line-height: 30px;
+  }
+  .heart div img:first-child {
+    margin-bottom: 1rem;
+  }
+  .performers {
+    background-size: 200%;
+  }
 }
 
 * {
