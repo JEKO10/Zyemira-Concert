@@ -1413,6 +1413,42 @@ footer button a:hover {
     font-size: 3rem;
     line-height: 45px;
   }
+  .slider {
+    min-height: 450px;
+    background-size: 200%;
+  }
+  .slider .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider .navigation h1 {
+    font-size: 1rem;
+  }
+  .slider .navigation #next,
+  .slider .navigation #prev {
+    height: 50px;
+    padding: 0 30px;
+  }
+  .slider .slide p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+  .slider h2,
+  .slider h3 {
+    font-size: 0.8rem;
+    max-width: 300px;
+    margin: 3rem auto;
+  }
+  .slider h3 {
+    font-size: 0.7rem;
+  }
 }
 
 * {

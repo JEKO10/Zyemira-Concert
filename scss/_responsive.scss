@@ -621,4 +621,41 @@
       line-height: 45px;
     }
   }
+
+  .slider {
+    min-height: 450px;
+    background-size: 200%;
+
+    .navigation {
+      @include flex(center, center);
+
+      h1 {
+        font-size: 1rem;
+      }
+
+      #next,
+      #prev {
+        height: 50px;
+        padding: 0 30px;
+      }
+    }
+
+    .slide {
+      p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+    }
+
+    h2,
+    h3 {
+      font-size: 0.8rem;
+      max-width: 300px;
+      margin: 3rem auto;
+    }
+
+    h3 {
+      font-size: 0.7rem;
+    }
+  }
 }
