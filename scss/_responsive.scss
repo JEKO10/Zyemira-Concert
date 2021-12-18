@@ -439,3 +439,40 @@
     display: none;
   }
 }
+
+@include mediaMediumLow {
+  header {
+    .landing {
+      nav {
+        padding: 60px 10px 0 60px;
+
+        ul li {
+          font-size: 1.1rem;
+          padding: 0 5px;
+        }
+      }
+
+      .info {
+        img {
+          height: 250px;
+        }
+
+        #place,
+        #party {
+          font-size: 1.1rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          max-width: 350px;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+
+  .party {
+    padding: 30px;
+    background-size: 25%;
+  }
+}

@@ -28,3 +28,9 @@ $secondaryFont: "Staatliches", cursive;
     @content;
   }
 }
+
+@mixin mediaMediumLow {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}

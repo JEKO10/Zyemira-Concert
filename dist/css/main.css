@@ -1274,6 +1274,32 @@ footer button a:hover {
   }
 }
 
+@media screen and (max-width: 576px) {
+  header .landing nav {
+    padding: 60px 10px 0 60px;
+  }
+  header .landing nav ul li {
+    font-size: 1.1rem;
+    padding: 0 5px;
+  }
+  header .landing .info img {
+    height: 250px;
+  }
+  header .landing .info #place,
+  header .landing .info #party {
+    font-size: 1.1rem;
+  }
+  header .landing .info p {
+    font-size: 1.1rem;
+    max-width: 350px;
+    line-height: 30px;
+  }
+  .party {
+    padding: 30px;
+    background-size: 25%;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
