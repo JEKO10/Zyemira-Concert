@@ -716,4 +716,26 @@
       }
     }
   }
+
+  .performers {
+    min-height: 70vh;
+    background-size: 210%;
+
+    .sliderPerform div {
+      background-size: 60%;
+      margin: 0;
+
+      h1 {
+        font-size: 3rem;
+        padding: 10px 0;
+        line-height: 50px;
+      }
+
+      p {
+        font-size: 1rem;
+        max-width: 400px;
+        line-height: 25px;
+      }
+    }
+  }
 }

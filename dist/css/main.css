@@ -1487,6 +1487,24 @@ footer button a:hover {
   .heart div img:last-child {
     display: none;
   }
+  .performers {
+    min-height: 70vh;
+    background-size: 210%;
+  }
+  .performers .sliderPerform div {
+    background-size: 60%;
+    margin: 0;
+  }
+  .performers .sliderPerform div h1 {
+    font-size: 3rem;
+    padding: 10px 0;
+    line-height: 50px;
+  }
+  .performers .sliderPerform div p {
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 25px;
+  }
 }
 
 * {
