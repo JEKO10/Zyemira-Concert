@@ -723,7 +723,7 @@
 
     .sliderPerform div {
       background-size: 60%;
-      margin: 0;
+      margin: 1rem 0;
 
       h1 {
         font-size: 3rem;
@@ -737,5 +737,24 @@
         line-height: 25px;
       }
     }
+  }
+
+  .letter {
+    div {
+      h1 {
+        font-size: 3rem;
+      }
+
+      input,
+      textarea,
+      button {
+        font-size: 0.7rem;
+        padding: 5px 15px;
+      }
+    }
+  }
+
+  footer {
+    padding-top: 30px;
   }
 }
