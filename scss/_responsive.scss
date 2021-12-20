@@ -658,4 +658,35 @@
       font-size: 0.7rem;
     }
   }
+
+  .tickets {
+    .info {
+      h1 {
+        background-size: 70%;
+        padding: 0 10px;
+        line-height: 65px;
+      }
+
+      .images {
+        img:not(:first-child) {
+          display: none;
+        }
+
+        img {
+          width: 100%;
+          max-height: 200px;
+        }
+      }
+    }
+  }
+
+  .moreInfo {
+    background-size: 25%;
+    div {
+      h3,
+      h4 {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

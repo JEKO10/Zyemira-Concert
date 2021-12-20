@@ -1449,6 +1449,25 @@ footer button a:hover {
   .slider h3 {
     font-size: 0.7rem;
   }
+  .tickets .info h1 {
+    background-size: 70%;
+    padding: 0 10px;
+    line-height: 65px;
+  }
+  .tickets .info .images img:not(:first-child) {
+    display: none;
+  }
+  .tickets .info .images img {
+    width: 100%;
+    max-height: 200px;
+  }
+  .moreInfo {
+    background-size: 25%;
+  }
+  .moreInfo div h3,
+  .moreInfo div h4 {
+    font-size: 0.8rem;
+  }
 }
 
 * {
