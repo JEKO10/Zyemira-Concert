@@ -711,8 +711,12 @@
         line-height: 45px;
       }
 
-      img:last-child {
-        display: none;
+      img {
+        animation: none !important;
+
+        &:last-child {
+          display: none;
+        }
       }
     }
   }

@@ -82,5 +82,16 @@ header {
     margin-top: -10rem;
     margin-left: 2rem;
     cursor: pointer;
+    animation: 1s arrow infinite alternate;
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
   }
 }

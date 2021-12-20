@@ -121,6 +121,30 @@ header #arrow {
   margin-top: -10rem;
   margin-left: 2rem;
   cursor: pointer;
+  -webkit-animation: 1s arrow infinite alternate;
+          animation: 1s arrow infinite alternate;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
 }
 
 .party {
@@ -599,6 +623,8 @@ header #arrow {
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
   margin-bottom: 2rem;
+  -webkit-animation: 1s arrowFirst infinite alternate;
+          animation: 1s arrowFirst infinite alternate;
 }
 
 .heart div img:nth-child(2) {
@@ -606,6 +632,8 @@ header #arrow {
           transform: rotate(20deg);
   margin-right: 5rem;
   float: right;
+  -webkit-animation: 1s arrowSecond infinite alternate;
+          animation: 1s arrowSecond infinite alternate;
 }
 
 .heart div img:last-child {
@@ -613,6 +641,8 @@ header #arrow {
           transform: rotate(150deg);
   margin: 2rem 5rem 0 0;
   float: right;
+  -webkit-animation: 1s arrowThird infinite alternate;
+          animation: 1s arrowThird infinite alternate;
 }
 
 .heart div h1 {
@@ -670,6 +700,72 @@ header #arrow {
 
 .heart div button a:hover {
   color: #9913e1;
+}
+
+@-webkit-keyframes arrowFirst {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes arrowFirst {
+  from {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  to {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@-webkit-keyframes arrowSecond {
+  from {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+
+@keyframes arrowSecond {
+  from {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+            transform: rotate(30deg);
+  }
+}
+
+@-webkit-keyframes arrowThird {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(155deg);
+            transform: rotate(155deg);
+  }
+}
+
+@keyframes arrowThird {
+  from {
+    -webkit-transform: rotate(160deg);
+            transform: rotate(160deg);
+  }
+  to {
+    -webkit-transform: rotate(155deg);
+            transform: rotate(155deg);
+  }
 }
 
 .performers {
@@ -1484,6 +1580,10 @@ footer button a:hover {
     font-size: 3rem;
     line-height: 45px;
   }
+  .heart div img {
+    -webkit-animation: none !important;
+            animation: none !important;
+  }
   .heart div img:last-child {
     display: none;
   }
@@ -1517,6 +1617,10 @@ footer button a:hover {
   footer {
     padding-top: 30px;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 * {
