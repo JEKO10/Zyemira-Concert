@@ -1468,6 +1468,25 @@ footer button a:hover {
   .moreInfo div h4 {
     font-size: 0.8rem;
   }
+  .noTomorrow h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .noTomorrow h3,
+  .noTomorrow h4 {
+    font-size: 0.7rem;
+  }
+  .heart {
+    background: #9913e1 url("../../image/bgHeart.png") right top no-repeat;
+    background-size: 10%;
+  }
+  .heart div h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .heart div img:last-child {
+    display: none;
+  }
 }
 
 * {
