@@ -14,15 +14,15 @@
     <title>Zyemira Concert</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <section class="landing">
         <nav>
           <img src="./image/logo.png" alt="Logo" />
           <ul>
-            <li class="active">Home</li>
-            <li>Event</li>
-            <li>Tickets</li>
-            <li>About</li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#slider">Event</a></li>
+            <li><a href="#tickets">Tickets</a></li>
+            <li><a href="#moreInfo">About</a></li>
           </ul>
         </nav>
         <div class="info">
@@ -35,11 +35,11 @@
             aliqua. Ut enim ad minim veniam.
           </p>
         </div>
-        <a href="">
+        <a href="#slider">
           <img src="./image/arrow.png" alt="arrow" id="arrow" />
         </a>
       </section>
-      <img src="./image/singer.jpg" alt="IMG" id="singer" />
+      <img src="./image/singer.jpg" alt="IMG" />
     </header>
     <section class="party">
       <h1><span>Party</span> your heart out!</h1>
@@ -49,10 +49,10 @@
           sed do ei usmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam quis nostrud exercitation.
         </p>
-        <button><a href="">Learn More</a></button>
+        <button><a href="#tickets">Learn More</a></button>
       </div>
     </section>
-    <section class="slider">
+    <section class="slider" id="slider">
       <div class="navigation">
         <img src="./image/arrow.png" id="prev" alt="IMG" />
         <h1>0<span>1</span>/03</h1>
@@ -113,7 +113,7 @@
         </div>
       </div>
     </section>
-    <section class="tickets">
+    <section class="tickets" id="tickets">
       <img src="./image/bannerBg.jpg" alt="IMG" />
       <img src="./image/tickets.jpg" alt="IMG" id="bannerAfter" />
       <div class="info">
@@ -126,7 +126,7 @@
               elit, sed do ei usmod tempor incidi dunt ut labore et dolore magna
               aliqua.
             </p>
-            <button><a href="">Learn More</a></button>
+            <button><a href="#moreInfo">Learn More</a></button>
           </div>
           <div>
             <p>
@@ -134,7 +134,7 @@
               elit, sed do ei usmod tempor incidi dunt ut labore et dolore magna
               aliqua.
             </p>
-            <button><a href="">Learn More</a></button>
+            <button><a href="#moreInfo">Learn More</a></button>
           </div>
         </div>
         <div class="images">
@@ -144,7 +144,7 @@
         </div>
       </div>
     </section>
-    <section class="moreInfo">
+    <section class="moreInfo" id="moreInfo">
       <div>
         <h4>A place to quench your thirst for music</h4>
         <h3>Party out with us for three days!</h3>
@@ -152,14 +152,14 @@
           <span>Lorem ipsum dolor sit amet</span> consectetur adipisicing elit,
           sed do ei usmod tempor incidi dunt ut labore et dolore magna aliqua.
         </p>
-        <button><a href="">Learn More</a></button>
+        <button><a href="#noTomorrow">Learn More</a></button>
       </div>
       <img src="./image/secondSlider.jpg" alt="IMG" />
     </section>
     <section class="partyImg">
       <img src="./image/img.jpg" alt="IMG" />
     </section>
-    <section class="noTomorrow">
+    <section class="noTomorrow" id="noTomorrow">
       <h1><span> Party like</span> there’s no tomorrow</h1>
       <div>
         <h2>A place to quench your thirst for music</h2>
@@ -182,11 +182,11 @@
           sed do ei usmod tempor incididunt ut labore et dolore magna aliqua. Ut
           enim ad minim veniam quis nostrud exercitation.
         </p>
-        <button><a href="">Learn More</a></button>
+        <button><a href="#performers">Learn More</a></button>
         <img src="./image/arrowWhite.png" alt="arrow" />
       </div>
     </section>
-    <section class="performers">
+    <section class="performers" id="performers">
       <div class="sliderPerform">
         <div>
           <img src="./image/star.png" alt="IMG" />
@@ -252,7 +252,7 @@
         <li>Rock</li>
         <li>EDM</li>
       </ul>
-      <button><a href="">Learn More</a></button>
+      <button><a href="#header">Learn More</a></button>
     </footer>
     <script src="./dist/main.js"></script>
   </body>

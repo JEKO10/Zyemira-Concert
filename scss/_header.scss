@@ -5,7 +5,6 @@ header {
   .landing {
     background: url("../../image/bg.png") top left no-repeat;
     flex: 2;
-    min-height: 100vh;
 
     nav {
       @include flex(space-between, center);
@@ -16,20 +15,16 @@ header {
         @include flex(space-between, center);
         list-style-type: none;
 
-        li {
-          text-transform: uppercase;
+        li a {
           font-size: 1.5rem;
           font-weight: 500;
+          text-decoration: none;
+          text-transform: uppercase;
           padding: 0 20px;
           cursor: pointer;
 
           &:hover {
             color: $primaryColor;
-          }
-
-          &.active {
-            color: $primaryColor;
-            font-weight: 900;
           }
         }
       }
@@ -82,5 +77,16 @@ header {
     margin-top: -10rem;
     margin-left: 2rem;
     cursor: pointer;
+    animation: 1s arrow infinite alternate;
+  }
+}
+
+@keyframes arrow {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
   }
 }

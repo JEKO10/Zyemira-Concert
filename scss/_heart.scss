@@ -13,18 +13,21 @@
     img:first-child {
       transform: rotate(-10deg);
       margin-bottom: 2rem;
+      animation: 1s arrowFirst infinite alternate;
     }
 
     img:nth-child(2) {
       transform: rotate(20deg);
       margin-right: 5rem;
       float: right;
+      animation: 1s arrowSecond infinite alternate;
     }
 
     img:last-child {
       transform: rotate(150deg);
       margin: 2rem 5rem 0 0;
       float: right;
+      animation: 1s arrowThird infinite alternate;
     }
 
     h1 {
@@ -81,5 +84,35 @@
         }
       }
     }
+  }
+}
+
+@keyframes arrowFirst {
+  from {
+    transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes arrowSecond {
+  from {
+    transform: rotate(35deg);
+  }
+
+  to {
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes arrowThird {
+  from {
+    transform: rotate(160deg);
+  }
+
+  to {
+    transform: rotate(155deg);
   }
 }

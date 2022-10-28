@@ -9,7 +9,7 @@
         }
 
         ul {
-          li {
+          li a {
             font-size: 1.2rem;
             padding: 0 10px;
           }
@@ -161,7 +161,7 @@
       nav {
         padding: 60px 20px 0 60px;
 
-        ul li {
+        ul li a {
           font-size: 1.3rem;
           padding: 0 9px;
         }
@@ -329,6 +329,10 @@
     .landing {
       background: url("../../image/bgHeader.png") top left no-repeat;
 
+      nav img {
+        height: 60px;
+      }
+
       .info {
         img {
           height: 300px;
@@ -444,11 +448,20 @@
   header {
     .landing {
       nav {
-        padding: 60px 10px 0 60px;
+        flex-direction: column;
+        padding: 20px 10px 0 60px;
 
-        ul li {
-          font-size: 1.1rem;
-          padding: 0 5px;
+        img {
+          margin-bottom: 20px;
+        }
+
+        ul {
+          width: 100%;
+
+          li a {
+            font-size: 1.1rem;
+            padding: 0 5px;
+          }
         }
       }
 
@@ -573,17 +586,21 @@
     .landing {
       min-height: 30vh;
       background-size: 30%;
-      nav {
-        padding: 50px 0 10px 0;
-        @include flex(center, center);
 
-        ul li {
-          font-size: 1rem;
-          padding: 0 5px;
+      nav {
+        padding: 20px 10px 0 20px;
+
+        ul {
+          width: initial;
+
+          li a {
+            font-size: 1rem;
+            padding: 0 5px;
+          }
         }
 
         img {
-          display: none;
+          height: 45px;
         }
       }
 
@@ -711,8 +728,12 @@
         line-height: 45px;
       }
 
-      img:last-child {
-        display: none;
+      img {
+        animation: none !important;
+
+        &:last-child {
+          display: none;
+        }
       }
     }
   }
