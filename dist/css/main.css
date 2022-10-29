@@ -41,15 +41,30 @@ header .landing nav ul {
   list-style-type: none;
 }
 header .landing nav ul li a {
+  position: relative;
+  color: #9913e1;
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 0 20px;
+  margin: 0 20px;
   cursor: pointer;
 }
-header .landing nav ul li a:hover {
-  color: #9913e1;
+header .landing nav ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  right: 0;
+  background: #9913e1;
+  -webkit-transition: width 500ms ease;
+  transition: width 500ms ease;
+}
+header .landing nav ul li a:hover:after {
+  width: 100%;
+  left: 0;
+  background: #9913e1;
 }
 header .landing .info {
   display: -webkit-box;
@@ -925,7 +940,7 @@ footer button a:hover {
   }
   header .landing nav ul li a {
     font-size: 1.2rem;
-    padding: 0 10px;
+    margin: 0 10px;
   }
   header .landing .info img {
     height: 250px;
@@ -1038,7 +1053,7 @@ footer button a:hover {
   }
   header .landing nav ul li a {
     font-size: 1.3rem;
-    padding: 0 9px;
+    margin: 0 9px;
   }
   header .landing .info img {
     height: 330px;
@@ -1271,7 +1286,7 @@ header .landing .info #party {
   }
   header .landing nav ul li a {
     font-size: 1.1rem;
-    padding: 0 5px;
+    margin: 0 5px;
   }
   header .landing .info img {
     height: 250px;
@@ -1367,7 +1382,6 @@ header .landing .info #party {
   }
   header .landing nav ul li a {
     font-size: 1rem;
-    padding: 0 5px;
   }
   header .landing nav img {
     height: 45px;
